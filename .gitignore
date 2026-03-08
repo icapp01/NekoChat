@@ -1,0 +1,105 @@
+# Gradle
+.gradle/
+build/
+!build/libs/*.jar
+
+# Gradle specific files
+.gradle/**/executionHistory/
+.gradle/**/fileHashes/
+.gradle/**/vcsMetadata/
+.gradle/buildOutputCleanup/
+.gradle/configuration-cache/
+.gradle/**/*.bin
+.gradle/**/*.lock
+.gradle/**/*.cache
+build/reports/
+build/tmp/
+build/**/*.bin
+build/**/*.lock
+build/**/*.html
+build/**/previous-compilation-data.bin
+
+# Java
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.classpath
+.project
+.settings/
+.metadata/
+bin/
+out/
+.idea_modules/
+*.swp
+*.swo
+*~
+.vscode/
+*.code-workspace
+
+# Eclipse
+bin/
+.settings/
+.metadata/
+.classpath
+.project
+*.prefs
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Plugin specific
+/run/
+/plugins/
+/versions/
+/world/
+/world_nether/
+/world_the_end/
+/logs/
+/crash-reports/
+*.lock
+*.orig
+*.rej
+*~
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Test results
+test-results/
+test-output/
+reports/
+*.test
+*.results
+
+# Package files
+*.tar.gz
+*.zip
+*.rar

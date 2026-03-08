@@ -1,0 +1,56 @@
+no-permission: "<red>У вас нет разрешения на использование этой команды."
+
+# Private messages
+msg-usage: "<red>Использование: /msg <player> <message>"
+msg-player-offline: "<red>Игрок <player> не в сети."
+msg-self: "<red>Вы не можете отправить сообщение себе."
+msg-cooldown: "<red>Пожалуйста, подождите <seconds> секунд перед отправкой следующего сообщения."
+msg-ignored: "<red>Этот игрок игнорирует вас."
+reply-usage: "<red>Использование: /reply <message>"
+reply-no-target: "<red>У вас нет кому ответить."
+
+# Toggle chat
+togglechat-usage: "<red>Использование: /togglechat [global|local|all]"
+togglechat-global-on: "<green>Глобальный чат включён."
+togglechat-global-off: "<red>Глобальный чат выключен."
+togglechat-local-on: "<green>Локальный чат включён."
+togglechat-local-off: "<red>Локальный чат выключен."
+togglechat-all-on: "<green>Все каналы чата включены."
+togglechat-all-off: "<red>Все каналы чата выключены."
+
+# Mentions
+mention-notify: "<yellow>Вас упомянул <player>!"
+mention-format-others: "<yellow>@<player><reset>"
+mention-format-self: "<green>@<player><reset>"
+
+# Ignore
+ignore-usage: "<red>Использование: /ignore <player>"
+ignore-self: "<red>Вы не можете игнорировать себя."
+ignore-already: "<red>Вы уже игнорируете <player>."
+ignore-added: "<green>Теперь вы игнорируете <player>."
+unignore-usage: "<red>Использование: /unignore <player>"
+unignore-not-found: "<red>Вы не игнорируете <player>."
+unignore-removed: "<green>Вы больше не игнорируете <player>."
+ignorelist-empty: "<gray>Вы никого не игнорируете."
+ignorelist-header: "<gold>Игнорируемые игроки:"
+ignorelist-entry: "<gray>- <player>"
+
+# Errors
+player-not-found: "<red>Игрок <player> не найден."
+invalid-usage: "<red>Неверное использование."
+
+# Help and reload
+chat-help: |
+  <gold>NekoChat v${version} от Hanamura Miyu
+  <white>Команды:
+  <gray>/chat help</gray> - Показать эту помощь
+  <gray>/chat reload</gray> - Перезагрузить конфигурацию (только админ)
+  <gray>/msg <player> <message></gray> - Отправить личное сообщение
+  <gray>/reply <message></gray> - Ответить на последнее сообщение
+  <gray>/togglechat [global|local|all]</gray> - Включить/выключить каналы (только админ)
+  <gray>/ignore <player></gray> - Игнорировать игрока
+  <gray>/unignore <player></gray> - Прекратить игнорировать игрока
+  <gray>/ignorelist</gray> - Список игнорируемых игроков
+  <gray>Глобальный чат: используйте префикс !</gray>
+  <gray>Упоминание: @player</gray>
+reload-success: "<green>Конфигурация успешно перезагружена."

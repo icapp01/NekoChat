@@ -1,0 +1,56 @@
+no-permission: "<red>您没有权限使用此命令。"
+
+# Private messages
+msg-usage: "<red>用法: /msg <player> <message>"
+msg-player-offline: "<red>玩家 <player> 不在线。"
+msg-self: "<red>您不能给自己发送消息。"
+msg-cooldown: "<red>请等待 <seconds> 秒后再发送下一条消息。"
+msg-ignored: "<red>该玩家正在忽略您。"
+reply-usage: "<red>用法: /reply <message>"
+reply-no-target: "<red>您没有回复对象。"
+
+# Toggle chat
+togglechat-usage: "<red>用法: /togglechat [global|local|all]"
+togglechat-global-on: "<green>全局聊天已启用。"
+togglechat-global-off: "<red>全局聊天已禁用。"
+togglechat-local-on: "<green>本地聊天已启用。"
+togglechat-local-off: "<red>本地聊天已禁用。"
+togglechat-all-on: "<green>所有聊天频道已启用。"
+togglechat-all-off: "<red>所有聊天频道已禁用。"
+
+# Mentions
+mention-notify: "<yellow>您被 <player> 提到！"
+mention-format-others: "<yellow>@<player><reset>"
+mention-format-self: "<green>@<player><reset>"
+
+# Ignore
+ignore-usage: "<red>用法: /ignore <player>"
+ignore-self: "<red>您不能忽略自己。"
+ignore-already: "<red>您已经在忽略 <player>。"
+ignore-added: "<green>您现在正在忽略 <player>。"
+unignore-usage: "<red>用法: /unignore <player>"
+unignore-not-found: "<red>您没有忽略 <player>。"
+unignore-removed: "<green>您不再忽略 <player>。"
+ignorelist-empty: "<gray>您没有忽略任何人。"
+ignorelist-header: "<gold>忽略的玩家:"
+ignorelist-entry: "<gray>- <player>"
+
+# Errors
+player-not-found: "<red>未找到玩家 <player>。"
+invalid-usage: "<red>无效用法。"
+
+# Help and reload
+chat-help: |
+  <gold>NekoChat v${version} by Hanamura Miyu
+  <white>命令:
+  <gray>/chat help</gray> - 显示此帮助
+  <gray>/chat reload</gray> - 重新加载配置（仅限管理员）
+  <gray>/msg <player> <message></gray> - 发送私聊消息
+  <gray>/reply <message></gray> - 回复最后一条消息
+  <gray>/togglechat [global|local|all]</gray> - 启用/禁用频道（仅限管理员）
+  <gray>/ignore <player></gray> - 忽略玩家
+  <gray>/unignore <player></gray> - 取消忽略玩家
+  <gray>/ignorelist</gray> - 忽略玩家列表
+  <gray>全局聊天: 使用 ! 前缀</gray>
+  <gray>提到: @player</gray>
+reload-success: "<green>配置重新加载成功。"

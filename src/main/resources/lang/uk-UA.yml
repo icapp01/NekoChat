@@ -1,0 +1,56 @@
+no-permission: "<red>У вас немає дозволу на використання цієї команди."
+
+# Private messages
+msg-usage: "<red>Використання: /msg <player> <message>"
+msg-player-offline: "<red>Гравець <player> не в мережі."
+msg-self: "<red>Ви не можете надіслати повідомлення собі."
+msg-cooldown: "<red>Будь ласка, зачекайте <seconds> секунд перед надсиланням наступного повідомлення."
+msg-ignored: "<red>Цей гравець ігнорує вас."
+reply-usage: "<red>Використання: /reply <message>"
+reply-no-target: "<red>У вас немає кому відповісти."
+
+# Toggle chat
+togglechat-usage: "<red>Використання: /togglechat [global|local|all]"
+togglechat-global-on: "<green>Глобальний чат увімкнено."
+togglechat-global-off: "<red>Глобальний чат вимкнено."
+togglechat-local-on: "<green>Локальний чат увімкнено."
+togglechat-local-off: "<red>Локальний чат вимкнено."
+togglechat-all-on: "<green>Усі канали чату увімкнено."
+togglechat-all-off: "<red>Усі канали чату вимкнено."
+
+# Mentions
+mention-notify: "<yellow>Вас згадав <player>!"
+mention-format-others: "<yellow>@<player><reset>"
+mention-format-self: "<green>@<player><reset>"
+
+# Ignore
+ignore-usage: "<red>Використання: /ignore <player>"
+ignore-self: "<red>Ви не можете ігнорувати себе."
+ignore-already: "<red>Ви вже ігноруєте <player>."
+ignore-added: "<green>Тепер ви ігноруєте <player>."
+unignore-usage: "<red>Використання: /unignore <player>"
+unignore-not-found: "<red>Ви не ігноруєте <player>."
+unignore-removed: "<green>Ви більше не ігноруєте <player>."
+ignorelist-empty: "<gray>Ви нікого не ігноруєте."
+ignorelist-header: "<gold>Ігноровані гравці:"
+ignorelist-entry: "<gray>- <player>"
+
+# Errors
+player-not-found: "<red>Гравець <player> не знайдений."
+invalid-usage: "<red>Невірне використання."
+
+# Help and reload
+chat-help: |
+  <gold>NekoChat v${version} від Hanamura Miyu
+  <white>Команди:
+  <gray>/chat help</gray> - Показати цю допомогу
+  <gray>/chat reload</gray> - Перезавантажити конфігурацію (лише адмін)
+  <gray>/msg <player> <message></gray> - Надіслати приватне повідомлення
+  <gray>/reply <message></gray> - Відповісти на останнє повідомлення
+  <gray>/togglechat [global|local|all]</gray> - Увімкнути/вимкнути канали (лише адмін)
+  <gray>/ignore <player></gray> - Ігнорувати гравця
+  <gray>/unignore <player></gray> - Припинити ігнорувати гравця
+  <gray>/ignorelist</gray> - Список ігнорованих гравців
+  <gray>Глобальний чат: використовуйте префікс !</gray>
+  <gray>Згадка: @player</gray>
+reload-success: "<green>Конфігурацію успішно перезавантажено."

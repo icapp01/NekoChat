@@ -1,0 +1,69 @@
+# NekoChat Configuration
+# Language settings
+language: "en-US"
+# Available languages: en-US, en-GB, es-ES, es-419, ja-JP, ru-RU, uk-UA, zh-CN, zh-TW
+auto-detect-client-language: true # Automatically use player's client language if available
+
+# Global chat prefix
+global-prefix: "!" # Messages starting with this prefix will be sent to global chat
+
+# Chat settings
+chat:
+  # Global chat settings
+  global:
+    enabled: true
+  # Local chat settings
+  local:
+    enabled: true
+    range: 100 # Blocks
+  # Private message settings
+  private:
+    enabled: true
+    sound:
+      enabled: true
+      sound: "entity.experience_orb.pickup"
+      volume: 1.0
+      pitch: 1.0
+  # Mention (@player) settings
+  mention:
+    enabled: true
+    sound:
+      enabled: true
+      sound: "entity.experience_orb.pickup"
+      volume: 0.5
+      pitch: 1.2
+    require-permission: false # If true, only players with nekochat.mention can be mentioned
+  # Join/quit messages
+  join:
+    enabled: true
+  quit:
+    enabled: true
+  # Death messages
+  death:
+    enabled: true
+    show-reason: true
+
+# Format settings
+# Internal placeholders:
+#   <luckperms_prefix> - prefix from LuckPerms (if installed)
+#   <luckperms_suffix> - suffix from LuckPerms (if installed)
+#   <username> - player's raw name (without formatting)
+#   <player> - player's display name (with any custom formatting)
+#   <message> - chat message (for chat formats)
+#   <sender>/<recipient> - for private messages
+#   <username_sender>/<username_recipient> - raw names for private messages
+#   <reason> - death message reason
+formats:
+  global-format: "<gold>[G] <reset><luckperms_prefix><username><luckperms_suffix> <gray>>> <reset><message>"
+  local-format: "<aqua>[L] <reset><luckperms_prefix><username><luckperms_suffix> <gray>>> <reset><message>"
+  private-format-send: "<aqua>[✉] <reset><username_sender> <gray>-> <reset><username_recipient> <gray>>> <reset><message>"
+  private-format-receive: "<aqua>[✉] <reset><username_sender> <gray>-> <reset><username_recipient> <gray>>> <reset><message>"
+  join-format: "<green>[+]<reset> <player>"
+  quit-format: "<red>[-]<reset> <player>"
+  death-format: "<gray>[☠] <gray>>> <gray><reason>"
+
+# Cooldown settings (in seconds)
+cooldowns:
+  chat: 0
+  msg: 1
+  reply: 1

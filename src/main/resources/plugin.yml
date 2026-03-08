@@ -1,0 +1,62 @@
+name: NekoChat
+version: 1.0.0
+main: hanamuramiyu.core.NekoChat
+description: Advanced chat system with local/global channels, mentions, and private messages
+author: Hanamura Miyu
+api-version: '1.21'
+folia-supported: true
+softdepend: [LuckPerms, PlaceholderAPI]
+load: POSTWORLD
+
+permissions:
+  nekochat.use:
+    description: Allows using chat commands
+    default: true
+  nekochat.admin:
+    description: Full access to all NekoChat features
+    default: op
+    children:
+      nekochat.use: true
+  nekochat.mention:
+    description: Allows using mentions (@player)
+    default: true
+  nekochat.msg:
+    description: Allows sending private messages
+    default: true
+  nekochat.ignore:
+    description: Allows ignoring players
+    default: true
+
+commands:
+  chat:
+    description: NekoChat help and reload commands
+    usage: /chat <help|reload>
+    aliases: [c]
+    permission: nekochat.use
+  msg:
+    description: Send a private message
+    usage: /msg <player> <message>
+    aliases: [tell, whisper, w]
+    permission: nekochat.msg
+  reply:
+    description: Reply to last private message
+    usage: /reply <message>
+    aliases: [r]
+    permission: nekochat.msg
+  togglechat:
+    description: Toggle chat channels on/off
+    usage: /togglechat [global|local|all]
+    aliases: [tchat]
+    permission: nekochat.admin
+  ignore:
+    description: Ignore a player
+    usage: /ignore <player>
+    permission: nekochat.ignore
+  unignore:
+    description: Unignore a player
+    usage: /unignore <player>
+    permission: nekochat.ignore
+  ignorelist:
+    description: List ignored players
+    usage: /ignorelist
+    permission: nekochat.ignore

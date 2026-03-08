@@ -1,0 +1,56 @@
+no-permission: "<red>このコマンドを使用する権限がありません。"
+
+# Private messages
+msg-usage: "<red>使い方: /msg <player> <message>"
+msg-player-offline: "<red>プレイヤー <player> はオンラインではありません。"
+msg-self: "<red>自分自身にメッセージを送信することはできません。"
+msg-cooldown: "<red>次のメッセージを送信するまで <seconds> 秒お待ちください。"
+msg-ignored: "<red>そのプレイヤーはあなたを無視しています。"
+reply-usage: "<red>使い方: /reply <message>"
+reply-no-target: "<red>返信する相手がいません。"
+
+# Toggle chat
+togglechat-usage: "<red>使い方: /togglechat [global|local|all]"
+togglechat-global-on: "<green>グローバルチャットが有効化されました。"
+togglechat-global-off: "<red>グローバルチャットが無効化されました。"
+togglechat-local-on: "<green>ローカルチャットが有効化されました。"
+togglechat-local-off: "<red>ローカルチャットが無効化されました。"
+togglechat-all-on: "<green>すべてのチャットチャンネルが有効化されました。"
+togglechat-all-off: "<red>すべてのチャットチャンネルが無効化されました。"
+
+# Mentions
+mention-notify: "<yellow><player> からメンションされました！"
+mention-format-others: "<yellow>@<player><reset>"
+mention-format-self: "<green>@<player><reset>"
+
+# Ignore
+ignore-usage: "<red>使い方: /ignore <player>"
+ignore-self: "<red>自分自身を無視することはできません。"
+ignore-already: "<red>すでに <player> を無視しています。"
+ignore-added: "<green><player> を無視しました。"
+unignore-usage: "<red>使い方: /unignore <player>"
+unignore-not-found: "<red><player> を無視していません。"
+unignore-removed: "<green><player> の無視を解除しました。"
+ignorelist-empty: "<gray>無視しているプレイヤーはいません。"
+ignorelist-header: "<gold>無視しているプレイヤー:"
+ignorelist-entry: "<gray>- <player>"
+
+# Errors
+player-not-found: "<red>プレイヤー <player> が見つかりません。"
+invalid-usage: "<red>無効な使い方です。"
+
+# Help and reload
+chat-help: |
+  <gold>NekoChat v${version} by 花村みゆ
+  <white>コマンド:
+  <gray>/chat help</gray> - このヘルプを表示
+  <gray>/chat reload</gray> - 設定をリロード (管理者限定)
+  <gray>/msg <player> <message></gray> - プライベートメッセージを送信
+  <gray>/reply <message></gray> - 最後のメッセージに返信する
+  <gray>/togglechat [global|local|all]</gray> - チャンネルを有効/無効にする (管理者限定)
+  <gray>/ignore <player></gray> - プレイヤーを無視する
+  <gray>/unignore <player></gray> - プレイヤーの無視を解除する
+  <gray>/ignorelist</gray> - 無視しているプレイヤーを表示
+  <gray>グローバルチャット: ! プレフィックスを使用</gray>
+  <gray>メンション: @player</gray>
+reload-success: "<green>設定が正常にリロードされました。"

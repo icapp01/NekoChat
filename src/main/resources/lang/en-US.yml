@@ -1,0 +1,56 @@
+no-permission: "<red>You don't have permission to use this command."
+
+# Private messages
+msg-usage: "<red>Usage: /msg <player> <message>"
+msg-player-offline: "<red>Player <player> is not online."
+msg-self: "<red>You cannot message yourself."
+msg-cooldown: "<red>Please wait <seconds> seconds before sending another message."
+msg-ignored: "<red>That player is ignoring you."
+reply-usage: "<red>Usage: /reply <message>"
+reply-no-target: "<red>You have no one to reply to."
+
+# Toggle chat
+togglechat-usage: "<red>Usage: /togglechat [global|local|all]"
+togglechat-global-on: "<green>Global chat has been enabled."
+togglechat-global-off: "<red>Global chat has been disabled."
+togglechat-local-on: "<green>Local chat has been enabled."
+togglechat-local-off: "<red>Local chat has been disabled."
+togglechat-all-on: "<green>All chat channels have been enabled."
+togglechat-all-off: "<red>All chat channels have been disabled."
+
+# Mentions
+mention-notify: "<yellow>You were mentioned by <player>!"
+mention-format-others: "<yellow>@<player><reset>"
+mention-format-self: "<green>@<player><reset>"
+
+# Ignore
+ignore-usage: "<red>Usage: /ignore <player>"
+ignore-self: "<red>You cannot ignore yourself."
+ignore-already: "<red>You are already ignoring <player>."
+ignore-added: "<green>You are now ignoring <player>."
+unignore-usage: "<red>Usage: /unignore <player>"
+unignore-not-found: "<red>You are not ignoring <player>."
+unignore-removed: "<green>You are no longer ignoring <player>."
+ignorelist-empty: "<gray>You are not ignoring anyone."
+ignorelist-header: "<gold>Ignored players:"
+ignorelist-entry: "<gray>- <player>"
+
+# Errors
+player-not-found: "<red>Player <player> not found."
+invalid-usage: "<red>Invalid usage."
+
+# Help and reload
+chat-help: |
+  <gold>NekoChat v${version} by Hanamura Miyu
+  <white>Commands:
+  <gray>/chat help</gray> - Show this help
+  <gray>/chat reload</gray> - Reload configuration (admin only)
+  <gray>/msg <player> <message></gray> - Send private message
+  <gray>/reply <message></gray> - Reply to last message
+  <gray>/togglechat [global|local|all]</gray> - Enable/disable channels (admin only)
+  <gray>/ignore <player></gray> - Ignore a player
+  <gray>/unignore <player></gray> - Unignore a player
+  <gray>/ignorelist</gray> - List ignored players
+  <gray>Global chat: use ! prefix</gray>
+  <gray>Mention: @player</gray>
+reload-success: "<green>Configuration reloaded successfully."

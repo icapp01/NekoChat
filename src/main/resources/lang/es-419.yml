@@ -1,0 +1,56 @@
+no-permission: "<red>No tienes permiso para usar este comando."
+
+# Private messages
+msg-usage: "<red>Uso: /msg <player> <message>"
+msg-player-offline: "<red>El jugador <player> no está en línea."
+msg-self: "<red>No puedes mandarte un mensaje a vos mismo."
+msg-cooldown: "<red>Por favor, esperá <seconds> segundos antes de enviar otro mensaje."
+msg-ignored: "<red>Ese jugador te está ignorando."
+reply-usage: "<red>Uso: /reply <message>"
+reply-no-target: "<red>No tienes a nadie a quien responder."
+
+# Toggle chat
+togglechat-usage: "<red>Uso: /togglechat [global|local|all]"
+togglechat-global-on: "<green>El chat global ha sido habilitado."
+togglechat-global-off: "<red>El chat global ha sido deshabilitado."
+togglechat-local-on: "<green>El chat local ha sido habilitado."
+togglechat-local-off: "<red>El chat local ha sido deshabilitado."
+togglechat-all-on: "<green>Todos los canales de chat han sido habilitados."
+togglechat-all-off: "<red>Todos los canales de chat han sido deshabilitados."
+
+# Mentions
+mention-notify: "<yellow>¡Fuiste mencionado por <player>!"
+mention-format-others: "<yellow>@<player><reset>"
+mention-format-self: "<green>@<player><reset>"
+
+# Ignore
+ignore-usage: "<red>Uso: /ignore <player>"
+ignore-self: "<red>No puedes ignorarte a vos mismo."
+ignore-already: "<red>Ya estás ignorando a <player>."
+ignore-added: "<green>Ahora estás ignorando a <player>."
+unignore-usage: "<red>Uso: /unignore <player>"
+unignore-not-found: "<red>No estás ignorando a <player>."
+unignore-removed: "<green>Ya no estás ignorando a <player>."
+ignorelist-empty: "<gray>No estás ignorando a nadie."
+ignorelist-header: "<gold>Jugadores ignorados:"
+ignorelist-entry: "<gray>- <player>"
+
+# Errors
+player-not-found: "<red>Jugador <player> no encontrado."
+invalid-usage: "<red>Uso inválido."
+
+# Help and reload
+chat-help: |
+  <gold>NekoChat v${version} por Hanamura Miyu
+  <white>Comandos:
+  <gray>/chat help</gray> - Mostrar esta ayuda
+  <gray>/chat reload</gray> - Recargar configuración (solo admin)
+  <gray>/msg <player> <message></gray> - Enviar mensaje privado
+  <gray>/reply <message></gray> - Responder al último mensaje
+  <gray>/togglechat [global|local|all]</gray> - Habilitar/deshabilitar canales (solo admin)
+  <gray>/ignore <player></gray> - Ignorar a un jugador
+  <gray>/unignore <player></gray> - Dejar de ignorar a un jugador
+  <gray>/ignorelist</gray> - Lista de jugadores ignorados
+  <gray>Chat global: usa el prefijo !</gray>
+  <gray>Mención: @player</gray>
+reload-success: "<green>Configuración recargada exitosamente."
